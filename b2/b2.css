@@ -1,0 +1,87 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.label {
+    display: flex;
+    width: 100%;
+    height: 44px;
+    background: orange;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: whitesmoke;
+    border: 1px solid black;
+}
+
+ol,
+p {
+    margin: 0;
+}
+
+.form {
+    margin-bottom: 10px;
+}
+
+.titlebottom,
+p {
+    padding-left: 22px;
+    padding-bottom: 15px;
+}
+
+.middle {
+    font-weight: 700;
+}
+
+.text {
+    padding-top: 15px;
+    display: none;
+}
+
+#abc:checked ~ #text {
+    display: block;
+}
+
+#cde:checked ~ #text {
+    display: block;
+}
+
+#bcd:checked ~ #text {
+    display: block;
+}
+
+.plus {
+    width: 15px;
+    height: auto;
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.minus {
+    width: 15px;
+    height: auto;
+    display: none;
+    padding-right: 10px;
+}
+
+#cde:checked ~ .label > .minus {
+    display: block;
+}
+
+#cde:checked ~ .label > .plus {
+    display: none;
+}
+#abc:checked ~ .label > .minus {
+    display: block;
+}
+
+#abc:checked ~ .label > .plus {
+    display: none;
+}
+#bcd:checked ~ .label > .minus {
+    display: block;
+}
+
+#bcd:checked ~ .label > .plus {
+    display: none;
+}
