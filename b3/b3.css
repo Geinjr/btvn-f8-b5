@@ -2,13 +2,18 @@
     font-family: "Roboto", sans-serif;
 }
 
-span {
+h2 {
     font-size: 30px;
     font-weight: 700;
 }
 
 p {
     font-size: 15px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .title {
@@ -76,9 +81,10 @@ button {
     height: 50px;
     font-size: 15px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 button:hover {
-    background: #00e0ff;
-    color: #fc503d;
+    background: yellow;
+    color: rebeccapurple;
 }
