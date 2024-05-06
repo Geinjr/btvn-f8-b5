@@ -41,6 +41,7 @@ h2 {
 .textbottom {
     text-decoration: underline;
     margin-left: 5px;
+    color: initial;
 }
 
 .img {
